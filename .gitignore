@@ -1,3 +1,9 @@
 /src/
 /src/OnlineShop/
 /src/
+/src/Library/service/
+/src/Library/service/AuthorService.java
+/src/Library/service/BookService.java
+/src/Library/service/UserService.java
+/src/Library/util/
+/src/Library/util/FakeDB.java
