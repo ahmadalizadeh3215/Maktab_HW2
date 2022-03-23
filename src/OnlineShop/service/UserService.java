@@ -10,6 +10,15 @@ public class UserService {
         this.fakeDB = fakeDB;
     }
 
+    public User getEmail(String emailAddress){
+        for (User u : fakeDB.getUserList()) {
+            if(u.getEmailAddress().equals(emailAddress)){
+                return u;
+            }
+        }
+        return null;
+    }
+
     public void chargeBalanceUsers(User user, Double balance){
         fakeDB.saveChargeBalance(user,balance);
     }
