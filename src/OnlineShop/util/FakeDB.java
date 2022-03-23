@@ -21,7 +21,9 @@ public class FakeDB {
 
     public FakeDB() {
     }
-
+    public void addUser(User users) {
+        this.userList.add(users);
+    }
     public List<Product> getProductList() {
         return productList;
     }
@@ -464,4 +466,6 @@ public class FakeDB {
         productTwenty.setCategory(subCategoryScientificMagazine);
         this.productList.add(productTwenty);
     }
+
+
 }
